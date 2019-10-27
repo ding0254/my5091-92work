@@ -4,12 +4,12 @@ import pandas as pd
 from scipy.stats import norm
 d1 = lambda S,K,r,vol,T: (np.log(S/K) + (r + (vol ** 2) / 2) * T) / (vol * np.sqrt(T)) 
 d2 = lambda S,K,r,vol,T: (np.log(S/K) + (r - (vol ** 2) / 2) * T) / (vol * np.sqrt(T)) 
-#define function to compute callprice
+#define function to compute option price
 callprice = lambda S,K,r,vol,T: S * norm.cdf(d1(S,K,r,vol,T)) -K * np.exp(-r * T) * norm.cdf(d2(S,K,r,vol,T))
 putprice=lambda S,K,r,vol,T: K * np.exp(-r * T) * norm.cdf(-d2(S,K,r,vol,T))-S * norm.cdf(-d1(S,K,r,vol,T))
 #define function to compute vega
 vega= lambda S,K,r,vol,T:S*norm.pdf(d1(S,K,r,vol,T))*T**0.5
-#define function to use bisection,size is the num of element, optype is the call or put, call =ture
+#define function to use bisection,size is the num of element, optype is the call or put, call =ture,put=false
 def bisection(s,k,T,r,optprice,size,optype):
     vol1=np.zeros(size)   #lower boundary 
     vol2=10*np.ones(size) #upper boundary
@@ -71,5 +71,5 @@ S=50*np.ones(size)      #construct the vector of S
 K=50*np.ones(size)      #construct the vector of striking price
 r=0.05*np.ones(size)    #construct the interest rate
 T=np.ones(size)         #construct the tenor
-optprice=np.linspace(10,11,size)   #construct the call option price
-output(S,K,T,r,optprice,size,False)   
+optprice=np.linspace(10,11,size)   #construct the option price
+output(S,K,T,r,optprice,size,True)   
