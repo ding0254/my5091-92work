@@ -1,0 +1,80 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,-183,-281,-551.5" HorizontalAlignment="Right" Width="1066">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="605*"/>
+            <RowDefinition Height="553*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="button" Content="GO" HorizontalAlignment="Left" Margin="40,566,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="-2.102,5.881" Click="button_Click"/>
+        <Label x:Name="label_Copy2" Content="" HorizontalAlignment="Left" Margin="374,264,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy5" Content="S" HorizontalAlignment="Left" Margin="27,188,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="textBox_r" HorizontalAlignment="Left" Height="23" Margin="108,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBox_r_TextChanged"/>
+        <TextBox x:Name="textBox_K" HorizontalAlignment="Left" Height="23" Margin="108,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBox_K_TextChanged"/>
+        <TextBox x:Name="textBox_S" HorizontalAlignment="Left" Height="23" Margin="108,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBox_S_TextChanged"/>
+        <Label x:Name="label_Copy6" Content="T&#xD;&#xA;" HorizontalAlignment="Left" Margin="28,307,0,0" VerticalAlignment="Top" FontSize="18" Height="44"/>
+        <Label x:Name="label_Copy7" Content="sigma" HorizontalAlignment="Left" Margin="10,283,0,0" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.461,-0.103"/>
+        <Label x:Name="label_Copy8" Content="K" HorizontalAlignment="Left" Margin="27,215,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="label_Copy9" Content="r" HorizontalAlignment="Left" Margin="27,250,0,0" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.545,-0.029"/>
+        <Label x:Name="label_Copy10" Content="Step&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,340,0,0" VerticalAlignment="Top" FontSize="18" Height="44" RenderTransformOrigin="0.511,0.284"/>
+        <Label x:Name="label_Copy11" Content="Trial&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Margin="10,373,0,0" VerticalAlignment="Top" FontSize="18" Height="44"/>
+        <TextBox x:Name="textBox_sigma" HorizontalAlignment="Left" Height="22" Margin="108,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBox_sigma_TextChanged"/>
+        <TextBox x:Name="textBox_T" HorizontalAlignment="Left" Height="23" Margin="108,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBox_T_TextChanged"/>
+        <TextBox x:Name="textBox_step" HorizontalAlignment="Left" Height="23" Margin="108,351,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBox_step_TextChanged"/>
+        <TextBox x:Name="textBox_trial" HorizontalAlignment="Left" Height="23" Margin="108,379,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBox_trial_TextChanged"/>
+        <Label x:Name="label_Copy" Content="Price" HorizontalAlignment="Left" Margin="414,202,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="textBox_Copy10" HorizontalAlignment="Left" Height="23" Margin="496,212,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox_Copy11" HorizontalAlignment="Left" Height="23" Margin="496,212,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox_gamma" HorizontalAlignment="Left" Height="23" Margin="496,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox_delta" HorizontalAlignment="Left" Height="23" Margin="496,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox_Copy14" HorizontalAlignment="Left" Height="23" Margin="496,212,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox_Copy15" HorizontalAlignment="Left" Height="23" Margin="496,212,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox_Price" HorizontalAlignment="Left" Height="23" Margin="496,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label_Copy1" Content="Theta" HorizontalAlignment="Left" Margin="412,351,0,0" VerticalAlignment="Top" FontSize="18" Height="44"/>
+        <Label x:Name="label_Copy3" Content="Vega" HorizontalAlignment="Left" Margin="418,317,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="label_Copy4" Content="Delta" HorizontalAlignment="Left" Margin="412,239,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="label_Copy12" Content="Gamma" HorizontalAlignment="Left" Margin="414,278,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="label_Copy13" Content="Rho&#xA;" HorizontalAlignment="Left" Margin="412,384,0,0" VerticalAlignment="Top" FontSize="18" Height="44"/>
+        <Label x:Name="label_Copy14" Content="Se" HorizontalAlignment="Left" Margin="414,428,0,0" VerticalAlignment="Top" FontSize="18" Height="44"/>
+        <TextBox x:Name="textBox_vega" HorizontalAlignment="Left" Height="23" Margin="496,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox_theta" HorizontalAlignment="Left" Height="23" Margin="496,361,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox_rho" HorizontalAlignment="Left" Height="23" Margin="496,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox_se" HorizontalAlignment="Left" Height="23" Margin="496,437,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <RadioButton x:Name="callButton" Content="call" HorizontalAlignment="Left" Margin="108,482,0,0" VerticalAlignment="Top" GroupName="1"/>
+        <RadioButton x:Name="putButton1" Content="put&#xD;&#xA;" HorizontalAlignment="Left" Margin="170,482,0,0" VerticalAlignment="Top" GroupName="1" Height="19"/>
+        <CheckBox x:Name="antithetic" Content="antithetic method" HorizontalAlignment="Left" Margin="144,501,0,0" VerticalAlignment="Top" Checked="antithetic_Checked"/>
+        <CheckBox x:Name="control_variate" Content="control variate" HorizontalAlignment="Left" Margin="144,521,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Time" Content="Time" HorizontalAlignment="Left" Margin="405,470,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.362,-0.875" FontSize="18"/>
+        <TextBox x:Name="textBox_time" HorizontalAlignment="Left" Height="23" Margin="496,478,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.481,2.772"/>
+        <CheckBox x:Name="mutiple" Content="multiple threading" HorizontalAlignment="Left" Margin="144,541,0,0" VerticalAlignment="Top" Checked="mutiple_Checked"/>
+        <Label x:Name="Time_Copy" Content="Core numbers" HorizontalAlignment="Left" Margin="374,517,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.362,-0.875" FontSize="18"/>
+        <TextBox x:Name="textBox_time_core" HorizontalAlignment="Left" Height="23" Margin="496,521,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.481,2.772"/>
+        <ProgressBar HorizontalAlignment="Left" Height="10" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="Time_Copy1" Content="progress bar&#xD;&#xA;" HorizontalAlignment="Left" Margin="374,557,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.362,-0.875" FontSize="18" Grid.RowSpan="2"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="636,188,0,0" VerticalAlignment="Top" Width="150" IsDropDownOpen="True" SelectionChanged="comboBox_SelectionChanged" Text="exotic option menu" IsTextSearchEnabled="False" SelectedIndex="0">
+            <ComboBox.ContextMenu>
+                <ContextMenu/>
+            </ComboBox.ContextMenu>
+            <ComboBoxItem x:Name="ComboBoxItem_european" Content="european option" HorizontalAlignment="Left" Width="129" TabIndex="1" Selected="ComboBoxItem_european_Selected"/>
+            <ComboBoxItem x:Name="ComboBoxItem_lookback" Content="lookback option" HorizontalAlignment="Left" Width="129" TabIndex="2" Selected="ComboBoxItem_lookback_Selected"/>
+            <ComboBoxItem x:Name="ComboBoxItem_range" Content="range option" HorizontalAlignment="Left" Width="129" TabIndex="3" Selected="ComboBoxItem_range_Selected"/>
+            <ComboBoxItem x:Name="ComboBoxItem_asian" Content="asian option" HorizontalAlignment="Left" Width="148" TabIndex="4" Selected="ComboBoxItem_asian_Selected"/>
+            <ComboBoxItem x:Name="ComboBoxItem_barrier_downout" Content="barrier option(down out)" HorizontalAlignment="Left" Width="150" Margin="0,0,-1,0" TabIndex="5" Selected="ComboBoxItem_barrier_downout_Selected"/>
+            <ComboBoxItem x:Name="ComboBoxItem_barrier_upout" Content="barrier option(up out)" HorizontalAlignment="Left" Width="148" TabIndex="6" Selected="ComboBoxItem_barrier_upout_Selected"/>
+            <ComboBoxItem x:Name="ComboBoxItem_barrier_downin" Content="barrier option(down in)" HorizontalAlignment="Left" Width="149" Selected="ComboBoxItem_barrier_downin_Selected"/>
+            <ComboBoxItem x:Name="ComboBoxItem_barrier_upin" Content="barrier option(up in)" HorizontalAlignment="Left" Width="149" Selected="ComboBoxItem_barrier_upin_Selected"/>
+            <ComboBoxItem x:Name="ComboBoxItem_digital" Content="digital option" HorizontalAlignment="Left" Width="149" Selected="ComboBoxItem_digital_Selected"/>
+        </ComboBox>
+        <Label Content="Rebate" HorizontalAlignment="Left" Margin="2,404,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Bound" HorizontalAlignment="Left" Margin="2,443,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="textBox_bound" HorizontalAlignment="Left" Height="23" Margin="108,446,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBox_bound_TextChanged" IsEnabled="False"/>
+        <TextBox x:Name="textBox_rebate" HorizontalAlignment="Left" Height="23" Margin="108,414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBox_rebate_TextChanged" IsEnabled="False"/>
+        <Label x:Name="label" Content="option type" HorizontalAlignment="Left" Margin="560,187,0,0" VerticalAlignment="Top"/>
+        <ProgressBar x:Name="progressbar" HorizontalAlignment="Left" Height="20" Margin="496,566,0,0" VerticalAlignment="Top" Width="168" ValueChanged="progressbar_ValueChanged_1"/>
+    </Grid>
+</Window>
